@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+
+  <body>
+    <div class="container_externo">
+      <div class="container_interno">
+        <header class="cabecalho">
+          <a href="https://www.alura.com.br/" target="_blank">
+            <img
+              class="cabecalho_logo_alura"
+              src="./assets/img/Logo.png"
+              alt="Logo da Alura"
+            />
+          </a>
+          <h1 class="cabecalho_texto">Decodificador</h1>
+        </header>
+        <main class="decodifica_entrada">
+          <textarea id="decodifica_entrada_texto" rows="17" cols="54">Digite seu texto.</textarea>
+          <p class="decodifica_entrada_info">&#8505; Apenas letras minúsculas e sem acento.</p>
+          <div class="decodifica_entrada_botoes">
+            <button onclick="criptografar()" class="decodifica_entrada_botao">
+              Criptografar
+            </button>
+            <button onclick="descriptografar()" class="decodifica_entrada_botao">
+              Descriptografar
+            </button>
+          </div>
+        </main>
+      </div>
+      <aside class="decodifica_saida">
+        <img
+          class="decodifica_saida_imagem"
+          src="./assets/img/1.PNG"
+          alt="Imagem que ilustra pesquisar"
+        />
+        <p id="decodifica_saida_texto1">Nenhuma mensagem encontrada.</p>
+        <p id="decodifica_saida_texto2">Digite um texto que deseja criptografar ou descriptografar.</p>
+        <button class="decodifica_saida_botao" onclick="copiar_area_transferencia()">Copiar</button>
+      </aside>
+    </div>
+    <footer>
+      <p class="footer_Texto">
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="https://licensebuttons.net/l/by-sa/4.0/88x31.png"
+            alt="Creative Commons License"
+        /></a>
+        Alexandre Bortolato 2024.
+      </p>
+    </footer>
+    <script src="./assets/scripts/app.js" defer></script>
+  </body>
+</html>
